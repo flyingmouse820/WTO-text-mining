@@ -1,5 +1,10 @@
 package TPR;
 
+/**
+ * 
+ * @author Hao
+ * Temporary test function
+ */
 public class test {
 
 	public static void main(String[] args) { 

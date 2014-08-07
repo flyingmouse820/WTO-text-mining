@@ -1,4 +1,5 @@
 package TPR;
+
 import java.io.*;
 import java.util.*;
 
@@ -6,6 +7,11 @@ import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
 
+/** 
+ * @author Hao
+ * to try divide countries using some criteria. 
+ *
+ */
 public class DivideCountry {
 
 	public static void main(String[] args) { 
@@ -23,9 +29,8 @@ public class DivideCountry {
 		    XWPFDocument doc = new XWPFDocument(is);
 		    
 		    List<XWPFParagraph> paras = doc.getParagraphs();  
-		    List<XWPFRun> runs;	
-		    
-		    Map<Integer,String> map = new HashMap<Integer,String>();
+		    //List<XWPFRun> runs;	
+		    //Map<Integer,String> map = new HashMap<Integer,String>();
 		    
 		    for (XWPFParagraph para : paras) 
 		    {
