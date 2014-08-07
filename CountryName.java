@@ -1,6 +1,8 @@
 package TPR;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /** 
@@ -10,48 +12,40 @@ import java.util.Map;
  */
 public class CountryName {
 
-	public static Map<String,String> CountryMap()
+	public static Map<String, List<String>> CountryMap()
 	{
-		Map<String,String> CountryMap = new HashMap<String,String>();
+		Map<String,List<String>> CountryMap = new HashMap<String,List<String>>();
+		List<String> list = new ArrayList<String>();
 		
-		CountryMap.put("Albania", "Albania");
-		CountryMap.put("Angola", "Angola");
-		CountryMap.put("Antigua and Barbuda", "Antigua and Barbuda");
-		CountryMap.put("Argentina", "Argentina");
-		CountryMap.put("Armenia", "Armenia");
-		CountryMap.put("Australia", "Australia");
-		CountryMap.put("Austria", "Austria");
+		list.clear();
+		list.add("Albania");
+		CountryMap.put("Albania", list);		
+		list.clear();
+		list.add("Angola");
+		CountryMap.put("Angola", list);
+		list.clear();
+		list.add("Antigua and Barbuda");
+		CountryMap.put("Antigua and Barbuda", list);
+		list.clear();
+		list.add("Argentina");
+		CountryMap.put("Argentina", list);
+		list.clear();
+		list.add("Armenia");
+		CountryMap.put("Armenia", list);
+		list.clear();
+		list.add("Australia");
+		CountryMap.put("Australia", list);
+		list.clear();
+		list.add("Austria");
+		CountryMap.put("Austria", list);
+		list.clear();
+		list.add("Bahrain, Kingdom of");
+		list.add("Kingdom of Bahrain");
+		list.add("Bahrain");
 		//both "Bahrain, Kingdom of" and "Kingdom of Bahrain" represents the Kingdom of Bahrain.
-		//it is wrong. a map can not have two same keys.
-		CountryMap.put("Bahrain, Kingdom of", "Bahrain, Kingdom of");
-		CountryMap.put("Bahrain, Kingdom of", "Kingdom of Bahrain");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
-		CountryMap.put("", "");
+		CountryMap.put("Bahrain, Kingdom of", list);
+		
+		//more to go
 		
 		return CountryMap;
 	}
