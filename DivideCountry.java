@@ -31,11 +31,13 @@ public class DivideCountry {
 		    List<XWPFParagraph> paras = doc.getParagraphs();  
 		    //List<XWPFRun> runs;	
 		    //Map<Integer,String> map = new HashMap<Integer,String>();
+		    Map<String,List<String>>  countryName = CountryName.CountryMap();
 		    
 		    for (XWPFParagraph para : paras) 
 		    {
 		    	if(para.getParagraphText().getBytes().length<=35)
 		    	{
+		    		searchCountryName(para,countryName);
 		    		//do sth.
 		    	}
 		    	
@@ -48,7 +50,10 @@ public class DivideCountry {
 		
 	}//end divideCountry
 	
-	
+	public static void searchCountryName(XWPFParagraph para, Map<String,List<String>> map)
+	{
+		//to do
+	}
 	
 
 	

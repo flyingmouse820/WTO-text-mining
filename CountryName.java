@@ -45,7 +45,7 @@ public class CountryName {
 		//both "Bahrain, Kingdom of" and "Kingdom of Bahrain" represents the Kingdom of Bahrain.
 		CountryMap.put("Bahrain, Kingdom of", list);
 		
-		//more to go
+		//more countries to go
 		
 		return CountryMap;
 	}
