@@ -16,7 +16,7 @@ public class DivideCountry {
 
 	public static void main(String[] args) { 
 		 
-		String fileName = "D:\\M264A1.docx";
+		String fileName = "D:\\enter.docx";
 		
 		divideCountry(fileName);
 	}
@@ -31,7 +31,7 @@ public class DivideCountry {
 		    List<XWPFParagraph> paras = doc.getParagraphs();  
 		    //List<XWPFRun> runs;	
 		    //Map<Integer,String> map = new HashMap<Integer,String>();
-		    Map<String,List<String>>  countryName = CountryName.CountryMap();
+		    Map<String,List<String>>  countryName = CountryName.readCountryMap();
 		    
 		    for (XWPFParagraph para : paras) 
 		    {
